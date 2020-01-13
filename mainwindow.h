@@ -18,8 +18,6 @@ public:
 private slots:
     void on_textEdit_textChanged();
 
-    void on_tabWidget_tabBarClicked(int index);
-
     void on_textEdit_3_textChanged();
 
 private:

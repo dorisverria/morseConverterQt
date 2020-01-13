@@ -65,5 +65,7 @@ std::string EnglishToMorseTranslator::translate(std::string input) {
     return output;
 }
 
-EnglishToMorseTranslator::~EnglishToMorseTranslator() {}
+EnglishToMorseTranslator::~EnglishToMorseTranslator() {
+   // qDebug() << "Deleting object 2";
+}
 

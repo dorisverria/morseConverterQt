@@ -24,11 +24,6 @@ void MainWindow::on_textEdit_textChanged()
     delete ptr;
 }
 
-void MainWindow::on_tabWidget_tabBarClicked(int index) {
-
-}
-
-
 void MainWindow::on_textEdit_3_textChanged()
 {
     MorseTranslator* ptr = new MorseToEnglishTranslator();
