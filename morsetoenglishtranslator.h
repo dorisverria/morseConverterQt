@@ -7,7 +7,7 @@ class MorseToEnglishTranslator : public MorseTranslator
 public:
     MorseToEnglishTranslator();
     std::string translate(std::string input);
-    std::unordered_map<std::string, char> dictionary;
+    static const std::unordered_map<std::string, char> dictionary;
     ~MorseToEnglishTranslator();
 };
 

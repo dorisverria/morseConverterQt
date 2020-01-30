@@ -1,7 +1,21 @@
 #include "morsetoenglishtranslator.h"
 
+const std::unordered_map<std::string, char> MorseToEnglishTranslator::dictionary = {
+    {".-", 'a'}, {"-...", 'b'}, {"-.-.", 'c'}, {"-..", 'd'}, {".", 'e'}, {"..-.", 'f'},
+    {"--.", 'g'}, {"....", 'h'}, {"..", 'i'}, {".---", 'j'}, {"-.-", 'k'}, {".-..", 'l'},
+    {"--", 'm'}, {"-.", 'n'}, {"---", 'o'}, {".--.", 'p'}, {"--.-", 'q'}, {".-.", 'r'},
+    {"...", 's'}, {"-", 't'}, {"..-", 'u'}, {"...-", 'v'}, {".--", 'w'}, {"-..-", 'x'},
+    {"-.--", 'y'}, {"--..", 'z'},
+    {".----", '1'}, {"..---", '2'}, {"...--", '3'}, {"....-", '4'}, {".....", '5'},
+    {"-....", '6'}, {"--...", '7'}, {"---..", '8'}, {"----.", '9'}, {"-----", '0'},
+    {"--..--", ','}, {"-..-.", '/'}, {".-.-.-", '.'}, {"-.-.-.", ';'}, {"---...", ':'},
+    {"-.--.", '('}, {"-.--.-", ')'}, {".--.-.", '@'}, {"···-··-", '='}, {".----.", '\\'},
+    {".-.-.", '+'}, {"-....-", '-'}, {"..--.-", '_'}, {"/", ' '}
+
+};
 MorseToEnglishTranslator::MorseToEnglishTranslator()
 {
+    /*
     this->dictionary.insert(std::make_pair(".-", 'a'));
     this->dictionary.insert(std::make_pair("-...", 'b'));
     this->dictionary.insert(std::make_pair("-.-.", 'c'));
@@ -54,6 +68,7 @@ MorseToEnglishTranslator::MorseToEnglishTranslator()
     this->dictionary.insert(std::make_pair("-....-", '-'));
     this->dictionary.insert(std::make_pair("..--.-", '_'));
     this->dictionary.insert(std::make_pair("/", ' '));
+    */
 }
 
 std::string MorseToEnglishTranslator::translate(std::string input) {
